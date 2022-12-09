@@ -1,19 +1,23 @@
 import './style/style.scss';
 
-const symbols = [
-  { 
-  image: './public/sun.svg',
-}
-]
+const icons = new Image();
+icons.src = "public/suncloud.png";
 
-document.querySelector('#placeHolderIcon').innerHTML = placeHolderIcon;
-const sunSymbol = document.placeHolderIcon.innerHTML = symbols.image;
+
+const placeHolderIcon = document.querySelector('#placeHolderIcon');
 let weather = "sun";
 
-if (weather != "sun") {
-  sunSymbol
+if (weather === "sun") {
 } else {
   
 }
-
-console.log(weather);
+/*
+function iconLoader() {
+ for (let i = 0; i < icons.length; i++) {
+  const element = icons[i];
+  document.getElementById("placeHolderIcon").innerHTML = icons[i];
+ }
+}*/
+console.log(placeHolderIcon);
+/*
+iconLoader(icons);*/
