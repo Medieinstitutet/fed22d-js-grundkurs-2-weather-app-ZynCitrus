@@ -1,23 +1,17 @@
 import './style/style.scss';
 
 const icons = new Image();
-icons.src = "public/suncloud.png";
+icons.src = "/suncloud.png";
 
 
 const placeHolderIcon = document.querySelector('#placeHolderIcon');
-let weather = "sun";
+let weather = "cloudySun";
 
 if (weather === "sun") {
-} else {
-  
-}
-/*
-function iconLoader() {
- for (let i = 0; i < icons.length; i++) {
-  const element = icons[i];
-  document.getElementById("placeHolderIcon").innerHTML = icons[i];
- }
-}*/
-console.log(placeHolderIcon);
-/*
-iconLoader(icons);*/
+  placeHolderIcon.classList.add("placeHolderIcon");
+  placeHolderIcon.classList.remove("cloudySun");
+  console.log(placeHolderIcon);} 
+if (weather === "cloudySun") {
+  placeHolderIcon.classList.add("cloudySun");
+  placeHolderIcon.classList.remove("placeHolderIcon");
+};
