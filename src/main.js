@@ -1,15 +1,19 @@
 import './style/style.scss';
-import getTempAir from './weatherAPI';
+import tempArray from './weatherAPI';
 const icons = new Image();
 icons.src = '/suncloud.png';
 const submitCity = document.querySelector('#submitCity');
 const placeHolderIcon = document.querySelector('#placeHolderIcon');
 const tempiInAir = document.querySelector('#placeHolderTemp')
-let weather = 'sun';
-let temp = 44;
+let weather = 'cloudySun';
+let temp = tempArray.main.temp;
 let input = '';
-
 submitCity.addEventListener('click', returnText);
+
+console.table(temp);
+
+
+
 
 function returnText() {
   if (document.getElementById('inputCity').value.length == '') {
@@ -20,7 +24,7 @@ function returnText() {
   console.log(input);
 }}
 
-if (weather === 'sun') {
+if (weather === 'Sun') {
   placeHolderIcon.classList.add('placeHolderIcon');
   placeHolderIcon.classList.remove('cloudySun');
 }if (weather === 'cloudySun') {
@@ -29,4 +33,3 @@ if (weather === 'sun') {
 };
 
 
-console.log(getTempAir());

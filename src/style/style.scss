@@ -28,24 +28,6 @@ main {
   justify-content: center;
   align-content: center;
 
-  .placeHolderIcon {
-    right: 0;
-    content:url("/public/sun.svg/");
-    display: flex;
-    align-items:flex-start;
-    justify-content: center;
-  }
-  
-  
-  
-  .placeHolderCity {
-    align-content: center;
-  }
-  
-  .cloudySun {
-    content:url("public/sunCloud.png");
-    max-width: 100px;
-  }
 }
 
 label{
@@ -62,3 +44,21 @@ button {
   border-radius: 10px;
 }
 
+.placeHolderIcon {
+  right: 0;
+  content:url("/public/sun.svg/");
+  display: flex;
+  align-items:flex-start;
+  justify-content: center;
+}
+
+
+
+.placeHolderCity {
+  align-content: center;
+}
+
+.cloudySun {
+  content:url("public/sunCloud.png");
+  max-width: 100px;
+}

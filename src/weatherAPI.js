@@ -1,14 +1,15 @@
-const tempAir = [];
+const tempArray = await getTempAir();
 
-function getTempAir(){
-     fetch('api.openweathermap.org/data/2.5/forecast?id=2715081&appid=75303f12006046a5556974d2d62ef0d1&units=metric')
+    async function getTempAir(){
+     return fetch('https://api.openweathermap.org/data/2.5/weather?q=Filipstad&appid=75303f12006046a5556974d2d62ef0d1&units=metric')
         .then((data) => data.json())
         .then((json) => {
-            console.table(json);
+            return json;
         })
         .catch((error) =>{
         console.error('Error', error)
+        return null;
     });
     };
 
-    export default getTempAir;
+    export default tempArray;
