@@ -9,10 +9,14 @@ let weather = "sun";
 submitCity.addEventListener('click', returnText);
 
 function returnText() {
+
+  if (document.getElementById("inputCity").value.length == '') {
+    alert('Vänligen skriv in något i rutan!')
+  } else {
   input = document.getElementById("inputCity").value;
   localStorage.setItem('input', input);
   console.log(input);
-}
+}}
 
 if (weather === "sun") {
   placeHolderIcon.classList.add("placeHolderIcon");
@@ -21,5 +25,6 @@ if (weather === "sun") {
   placeHolderIcon.classList.add("cloudySun");
   placeHolderIcon.classList.remove("placeHolderIcon");
 };
+
 
 console.log(input);
