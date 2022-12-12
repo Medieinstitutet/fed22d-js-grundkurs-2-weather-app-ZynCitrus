@@ -1,5 +1,5 @@
 import './style/style.scss';
-
+import getTempAir from './weatherAPI';
 const icons = new Image();
 icons.src = '/suncloud.png';
 const submitCity = document.querySelector('#submitCity');
@@ -29,4 +29,4 @@ if (weather === 'sun') {
 };
 
 
-console.log(input);
+console.log(getTempAir());
