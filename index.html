@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-<!-- TODO: glöm ej att byta språk här -->
+<html lang="sv">
 
 <head>
   <meta charset="UTF-8" />
@@ -12,14 +11,15 @@
 <body>
   <main>
     <div class="app" id="app">
-      <div class="placeHolderTemp" id="placeHolderTemp">55 grader celcius</div><br><br>
-      <div class="placeHolderIcon" id="placeHolderIcon"></div>
       <div class="placeHolderCity" id="placeHolderCity">
         <label aria-placeholder="City">
-          <input type="text" placeholder="Type your city to search">
-          <button class="submit">SEARCH</button>
+          <input id="inputCity" type="text" placeholder="Type your city to search">
+          <button id="submitCity" class="submit">SEARCH</button>
         </label>
       </div>
+      <div class="placeHolderTemp" id="placeHolderTemp">55 grader celcius</div><br><br>
+      <div class="placeHolderIcon" id="placeHolderIcon"></div>
+
     </div>
   </main>
 
