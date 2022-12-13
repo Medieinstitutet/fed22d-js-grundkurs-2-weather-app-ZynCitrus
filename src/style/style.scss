@@ -6,28 +6,31 @@
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: rem(16px);
   color-scheme: light dark;
-  background-color: darkgreen;
+  background-color: #222;
   width: 100vw;
+  height: 100vh;
   padding: 0;
   margin: 0;
 }
 
+body{
+  width: 100vw;
+  height: 100vh;
+}
 
 main {
   width: 100vw;
+  height: 100vh;
   padding: 0;
   margin: 0;
 }
 
 .app {
   width: 100vw;
-  margin-block: 20px;
-  display: block;
-  flex-direction: column;
-  gap: 20px;
+  height: 100vh;
+  display: flex;
   justify-content: center;
-  align-content: center;
-
+  align-items: center;
 }
 
 label{
@@ -44,21 +47,26 @@ button {
   border-radius: 10px;
 }
 
-.placeHolderIcon {
+#placeholderTemp {
+  display: flex;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  align-items: center;
+}
+
+#placeHolderCity {
+}
+
+#placeHolderIcon {
   right: 0;
   content:url("/public/sun.svg/");
-  display: flex;
-  align-items:flex-start;
-  justify-content: center;
+  position: absolute;
+  
 }
 
-
-
-.placeHolderCity {
-  align-content: center;
-}
-
-.cloudySun {
+#cloudySun {
   content:url("public/sunCloud.png");
   max-width: 100px;
 }
