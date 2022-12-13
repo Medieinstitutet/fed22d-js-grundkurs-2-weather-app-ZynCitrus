@@ -5,14 +5,14 @@ icons.src = '/suncloud.png';
 const submitCity = document.querySelector('#submitCity');
 const placeHolderIcon = document.querySelector('#placeHolderIcon');
 const tempiInAir = document.querySelector('#placeHolderTemp')
-let weather = 'cloudySun';
+let weather = 'sun';
 let temp = tempArray.main.temp;
-let input = '';
+let input = 'Stockholm';
 submitCity.addEventListener('click', returnText);
 
+document.getElementById("placeHolderTemp").innerHTML = ("Det är " +temp+ " i " + input);
+
 console.table(temp);
-
-
 
 
 function returnText() {
@@ -30,6 +30,6 @@ if (weather === 'Sun') {
 }if (weather === 'cloudySun') {
   placeHolderIcon.classList.add('cloudySun');
   placeHolderIcon.classList.remove('placeHolderIcon');
-};
-
-
+}if (weather === 'cloudy') {
+  
+}
