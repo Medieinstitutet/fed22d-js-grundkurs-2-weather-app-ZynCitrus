@@ -1,18 +1,19 @@
 import './style/style.scss';
-import tempArray from './weatherAPI';
 const icons = new Image();
 icons.src = '/suncloud.png';
 const submitCity = document.querySelector('#submitCity');
 const placeHolderIcon = document.querySelector('#placeHolderIcon');
 const tempiInAir = document.querySelector('#placeHolderTemp')
 let weather = 'sun';
-let temp = tempArray.main.temp;
 let input = 'Stockholm';
 submitCity.addEventListener('click', returnText);
+import tempArray from './weatherAPI';
+let temp = tempArray.main.temp;
+let city = tempArray.name;
 
-document.getElementById("placeHolderTemp").innerHTML = ("Det är " +temp+ " i " + input);
+document.getElementById("placeHolderTemp").innerHTML = ("Det är " +temp+ " i " + city);
 
-console.table(temp);
+console.table(tempArray);
 
 
 function returnText() {
