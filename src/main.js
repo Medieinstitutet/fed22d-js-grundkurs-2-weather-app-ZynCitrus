@@ -11,7 +11,7 @@ let temp = tempArray.main.temp;
 let city = tempArray.name;
 let rightInDemFeels = tempArray.main.feels_like;
 submitCity.addEventListener('click', returnText);
-document.getElementById("placeHolderTemp").innerHTML = "Idag är det " + temp + ", men det känns som " + rightInDemFeels + " i " + city;
+document.getElementById("placeHolderTemp").innerHTML = "Idag är det " + temp + ", men det känns som " + rightInDemFeels + " i Stockholm";
 
 /*function to get info from input to getCity */ 
 async function returnText() {
@@ -56,7 +56,9 @@ async function returnText() {
     };
 
 
-    /* En slask för sånt som kan behövas igen sen
+
+
+/* En slask för sånt som kan behövas igen sen
 const tempInAir = document.querySelector('#placeHolderTemp')
 placeHolderCity
 
