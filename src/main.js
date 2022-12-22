@@ -12,6 +12,7 @@ let tempuratureDecimal = Math.round(temp);
 let city = tempuratureArray.name;
 let rightInDemFeels = tempuratureArray.main.feels_like;
 let feelsLike = Math.round(rightInDemFeels);
+let getIconForSky = tempuratureArray.weather[0].icon;
 submitCity.addEventListener('click', getTextFromInput);
 document.getElementById("placeHolderTemp").innerHTML = "Idag är det " + tempuratureDecimal + " och det känns som " + feelsLike + " i " + city;
 
@@ -27,9 +28,13 @@ async function getTextFromInput() {
   tempuratureDecimal = Math.round(temp);
   city = tempuratureArray.name;
   rightInDemFeels = tempuratureArray.main.feels_like;
+  feelsLike = Math.round(rightInDemFeels);
+  getIconForSky = tempuratureArray.weather[0].icon;
+  console.table(getIconForSky);
   document.getElementById("placeHolderTemp").innerHTML = "Idag är det " + tempuratureDecimal + " och det känns som " + feelsLike + " i " + city;
     
 }}
+
     async function getTempuratureArray(){
     let apiLink = `https://api.openweathermap.org/data/2.5/weather?q=${getCity}&appid=75303f12006046a5556974d2d62ef0d1&units=metric`
      return fetch(apiLink)
