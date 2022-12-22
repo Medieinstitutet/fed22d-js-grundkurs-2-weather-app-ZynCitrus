@@ -1,4 +1,4 @@
-@use "utils/a11y"; // Om det inte funkar, byt @use mot @import
+@use "utils/a11y"; 
 @use "vendor/reset";
 $breakpoint-tablet: 768px;
 
@@ -13,10 +13,12 @@ $breakpoint-tablet: 768px;
   margin: 0;
 }
 
-body{
+body {
   width: 100vw;
   height: 100vh;
   font-family: 'Noto Sans', serif; 
+  display: inline-grid;
+  grid-template-rows: 50px 100px;
 }
 
 main {
@@ -24,18 +26,25 @@ main {
   height: 100vh;
   padding: 0;
   margin: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  background: black;
+  bottom: 0;
+  position: absolute;
+  width: 100vw;
+  text-align: center;
 }
 
 .app {
   width: 100vw;
   height: 100vh;
-  display: grid;
-  justify-content: center;
-  align-items: center;
 }
 
-label{
-  display: block;
+label {
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -48,16 +57,13 @@ button {
   border-radius: 10px;
 }
 
-#placeholderTemp {
+.placeholderTemp {
   display: flex;
-  height: 100%;
-  padding: 0;
-  margin: 0;
-  position: absolute;
-  left: 0;
+  justify-content: center;
+  align-items: center;
 }
 
-#placeHolderIcon {
+.placeHolderIcon {
   right: 0;
   top: 0;
   content:url("/public/sun.svg/");
@@ -65,22 +71,37 @@ button {
   width: 100px;
 }
 
-#cloudySun {
+.cloudySun {
   content:url("public/sunCloud.png");
   max-width: 100px;
+}
+
+.cloudy {
+  content:url("public/cloud.png");
+  max-width: 100px;
+}
+
+.placeholderCity {
+  width: 100%;
+  font-size: x-large;
 }
 
 
 @media (max-width: $breakpoint-tablet) {
   .app {
-    display: grid;
+    display: inline-grid;
   }
 
-  #placeHolderIcon {
+  .placeHolderIcon {
     right: 0;
     top: 0;
     content:url("/public/sun.svg/");
     position: absolute;
     width: 100px;
+  }
+
+  .placeholderCity {
+    width: 100%;
+    font-size: x-large;
   }
 }
