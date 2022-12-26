@@ -16,8 +16,8 @@ let getIconForSky = tempuratureArray.weather[0].icon;
 submitCity.addEventListener('click', getTextFromInput);
 document.getElementById("placeHolderTemp").innerHTML = "Idag är det " + tempuratureDecimal + " och det känns som " + feelsLike + " i " + city;
 
+console.table(getIconForSky)
 /*If-sats för att byta bakgrund beroende på tid*/
-
 if (checkTime >= 7 && checkTime <= 18) {
   document.body.style.background = "Red";
 } else {
@@ -56,7 +56,13 @@ async function getTempuratureArray(){
   });
   };
 
-
+switch (true){
+  case getIconForSky = "04n":
+    console.log('Sno');
+    break;
+  default:
+    console.log('Skiten funkar inte....');
+}
 
 
 

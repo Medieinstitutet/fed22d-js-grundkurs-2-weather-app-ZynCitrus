@@ -14,20 +14,11 @@ $breakpoint-tablet: 768px;
 }
 
 body {
-  width: 100vw;
-  height: 100vh;
-  font-family: 'Noto Sans', serif; 
-  display: inline-grid;
-  grid-template-rows: 50px 100px;
+
 }
 
 main {
-  width: 100vw;
-  height: 100vh;
-  padding: 0;
-  margin: 0;
-  justify-content: center;
-  align-items: center;
+
 }
 
 footer {
@@ -38,15 +29,10 @@ footer {
   text-align: center;
 }
 
-.app {
-  width: 100vw;
-  height: 100vh;
-}
-
 label {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 input {
@@ -55,12 +41,6 @@ input {
 
 button {
   border-radius: 10px;
-}
-
-.placeholderTemp {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .placeHolderIcon {
@@ -80,12 +60,6 @@ button {
   content:url("public/cloud.png");
   max-width: 100px;
 }
-
-.placeholderCity {
-  width: 100%;
-  font-size: x-large;
-}
-
 
 @media (max-width: $breakpoint-tablet) {
   .app {
