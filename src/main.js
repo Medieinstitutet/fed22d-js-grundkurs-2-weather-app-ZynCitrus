@@ -1,5 +1,5 @@
 import './style/style.scss';
- 
+let checkTime = new Date().getHours();
 let getCity = 'oslo';
 let tempuratureArray = await getTempuratureArray();
 const icons = new Image();
@@ -15,6 +15,14 @@ let feelsLike = Math.round(rightInDemFeels);
 let getIconForSky = tempuratureArray.weather[0].icon;
 submitCity.addEventListener('click', getTextFromInput);
 document.getElementById("placeHolderTemp").innerHTML = "Idag är det " + tempuratureDecimal + " och det känns som " + feelsLike + " i " + city;
+
+/*If-sats för att byta bakgrund beroende på tid*/
+
+if (checkTime >= 7 && checkTime <= 18) {
+  document.body.style.background = "Red";
+} else {
+   document.body.style.background = "black";
+}
 
 /*function to get info from input to getCity */ 
 async function getTextFromInput() {
@@ -35,18 +43,19 @@ async function getTextFromInput() {
     
 }}
 
-    async function getTempuratureArray(){
-    let apiLink = `https://api.openweathermap.org/data/2.5/weather?q=${getCity}&appid=75303f12006046a5556974d2d62ef0d1&units=metric`
-     return fetch(apiLink)
-        .then((data) => data.json())
-        .then((json) => {
-            return json;
-        })
-        .catch((error) =>{
-        console.error('Error', error)
-        return null;
-    });
-    };
+async function getTempuratureArray(){
+  let apiLink = `https://api.openweathermap.org/data/2.5/weather?q=${getCity}&appid=75303f12006046a5556974d2d62ef0d1&units=metric`
+  return fetch(apiLink)
+    .then((data) => data.json())
+    .then((json) => {
+      return json;
+  })
+    .catch((error) =>{
+    console.error('Error', error)
+    return null;
+  });
+  };
+
 
 
 
