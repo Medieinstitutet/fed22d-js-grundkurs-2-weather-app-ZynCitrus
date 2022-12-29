@@ -76,6 +76,7 @@ handleLocation();
 
 
 /*
+ En slask för sånt som kan behövas igen sen
 switch (){
   case getIconForSky = `04n` :
     console.log('Snö');
@@ -85,9 +86,6 @@ switch (){
 }
   document.getElementById("placeHolderTemp").innerHTML = "Idag är det " + tempuratureDecimal + " och det känns som " + feelsLike + " i " + city;
 
-
-
- En slask för sånt som kan behövas igen sen
 const tempInAir = document.querySelector('#placeHolderTemp')
 placeHolderCity
 
