@@ -2,19 +2,16 @@
 @use "vendor/reset";
 $breakpoint-tablet: 768px;
 
-:root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+body {
+  font-family: 'Noto Sans', sans-serif;
   font-size: rem(16px);
   color-scheme: light dark;
   background-color: #87ceeb;
+  color: #ffffff;
   width: 100vw;
   height: 100vh;
   padding: 0;
   margin: 0;
-}
-
-body {
-
 }
 
 main {
@@ -23,6 +20,7 @@ main {
 
 footer {
   background: black;
+
   bottom: 0;
   position: absolute;
   width: 100vw;
@@ -46,19 +44,8 @@ button {
 .placeHolderIcon {
   right: 0;
   top: 0;
-  content:url("/public/sun.svg/");
   position: absolute;
   width: 100px;
-}
-
-.cloudySun {
-  content:url("public/sunCloud.png");
-  max-width: 100px;
-}
-
-.cloudy {
-  content:url("public/cloud.png");
-  max-width: 100px;
 }
 
 @media (max-width: $breakpoint-tablet) {
@@ -69,7 +56,6 @@ button {
   .placeHolderIcon {
     right: 0;
     top: 0;
-    content:url("/public/sun.svg/");
     position: absolute;
     width: 100px;
   }
