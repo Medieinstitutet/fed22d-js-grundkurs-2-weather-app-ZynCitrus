@@ -6,23 +6,28 @@
   <link rel="icon" type="image/ico" href="/js-template/favicon.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Projekt</title>
-  <script type="module" crossorigin src="/js-template/assets/index.f495ab7c.js"></script>
-  <link rel="stylesheet" href="/js-template/assets/index.e56faa86.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;1,800&display=swap" rel="stylesheet">
+  <script type="module" crossorigin src="/js-template/assets/index.9988a800.js"></script>
+  <link rel="stylesheet" href="/js-template/assets/index.e1e976f2.css">
 </head>
 
 <body>
   <main>
     <div class="app" id="app">
-      <div class="placeHolderCity" id="placeHolderCity">
-        <label aria-placeholder="City">
-          <input id="inputCity" type="text" placeholder="Type your city to search" required />
-          <button id="submitCity" class="submit">SEARCH</button>
-        </label>
+      <div class="placeHolderIcon" id="placeHolderIcon"><img id="iconForSky" src="" /></div>
+      <div class="placeHolderTemp" id="placeHolderTemp"></div>
+      <div class="placeHolderInput" id="placeHolderInput">
+        <div class="placeHolderCity" id="placeHolderCity">
+          <label aria-placeholder="placeHolderInput">
+            <input id="inputCity" type="text" placeholder="Type your city to search" required />
+            <button id="submitCity" class="submit">SEARCH</button>
+          </label>
+        </div>
       </div>
-      <div class="placeHolderTemp" id="placeHolderTemp">55 grader celcius</div><br><br>
-      <div class="placeHolderIcon" id="placeHolderIcon"></div>
-
-    </div>
+      <footer>För att kunna använda den här sidan överhuvudtaget behöver du godkänna att vi samlar in din plats, du har
+        liksom inget annat val. Vill du inte dela platsen så stäng fönstret.</footer>
   </main>
 
   <!-- TODO
@@ -30,7 +35,6 @@
     - Kontrollera tillgänglighet: https://www.a11yproject.com/checklist/ & Chrome Lighthouse/Firefox Accessibility Tools
     - Validera genererade CSS: https://jigsaw.w3.org/css-validator/#validate_by_input
     -->
-  
   
 </body>
 
