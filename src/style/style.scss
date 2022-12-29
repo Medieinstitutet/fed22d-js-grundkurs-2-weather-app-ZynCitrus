@@ -15,30 +15,42 @@ body {
 }
 
 main {
-
+  text-align: center;
+  align-items: center;
+  height: 100%;
 }
 
 footer {
-  background: black;
-
+  background: #222222;
   bottom: 0;
-  position: absolute;
+  left: 0;
   width: 100vw;
   text-align: center;
+  align-items: center;
+  position: absolute;
+  font-size: large
 }
 
 label {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 45%;
 }
 
 input {
   border-radius: 10px;
+  background: #222222;
 }
 
 button {
   border-radius: 10px;
+}
+
+.placeHolderTemp {
+  position: absolute;
+  top: 45%;
+  left: 44%;
 }
 
 .placeHolderIcon {
@@ -50,9 +62,22 @@ button {
 
 @media (max-width: $breakpoint-tablet) {
   .app {
-    display: inline-grid;
+
+  }
+  body {
+    display: block;
+    color: green;
+    font-size: large;
+    text-align: center;
+    align-items: center;
   }
 
+  label {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+  }
   .placeHolderIcon {
     right: 0;
     top: 0;
@@ -60,8 +85,21 @@ button {
     width: 100px;
   }
 
-  .placeholderCity {
-    width: 100%;
-    font-size: x-large;
+  .placeHolderTemp {
+    position: absolute;
+    top: 45%;
+    left: 15%;
   }
+  
+}
+
+  footer {
+    background: #222222;
+    font-size: small;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    text-align: center;
+    align-items: center;
+    position: absolute
 }

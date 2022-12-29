@@ -4,9 +4,9 @@ const submitCity = document.querySelector('#submitCity');
 submitCity.addEventListener('click', getTextFromInput);
 /*If-sats för att byta bakgrund beroende på tid*/
 if (checkTime >= 7 && checkTime <= 18) {
-  document.body.style.background = "Red";
+  document.body.style.background = "lightblue";
 } else {
-  document.body.style.background = "black";
+  document.body.style.background = "darkblue";
 }
 
 
