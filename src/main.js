@@ -7,16 +7,16 @@ submitCity.addEventListener('click', getTextFromInput);
 /*if to change background depending on month*/
 if (checkMonth >=2 && checkMonth <= 4) {
   console.log('Vår');
-  document.body.style.backgroundImage = "url('/spring.jpg')";
+  document.body.style.backgroundImage = "url('./spring.jpg')";
 }if (checkMonth >=5 && checkMonth <= 7) {
   console.log('Sommar');
-  document.body.style.backgroundImage = "url('/summer.jpg')";
+  document.body.style.backgroundImage = "url('./summer.jpg')";
 }if (checkMonth >=8 && checkMonth <= 9) {
   console.log('Höst');
-  document.body.style.backgroundImage = "url('/fall.jpg')";
+  document.body.style.backgroundImage = "url('./fall.jpg')";
 }else{
   console.log('Vinter');
-  document.body.style.backgroundImage = "url('/winter.jpg')";
+  document.body.style.backgroundImage = "url('./winter.jpg')";
 }
 
 
