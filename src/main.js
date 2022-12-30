@@ -59,6 +59,7 @@ function handleLocation(){
 };
   
   const errorCallback = (error) => {
+    alert('Hej hej');
   };
   navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
   
