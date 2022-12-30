@@ -5,7 +5,7 @@ $breakpoint-tablet: 768px;
 body {
   font-family: 'Noto Sans', sans-serif;
   font-size: rem(16px);
-  background-image: url('/summer.jpg');
+  background-image: url('');
   color-scheme: light dark;
   color: #ffffff;
   width: 100vw;
@@ -44,6 +44,7 @@ label {
 input {
   border-radius: 10px;
   background: #222222;
+  text-align: center;
 }
 
 button {
