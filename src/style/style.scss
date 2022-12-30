@@ -6,12 +6,13 @@ body {
   font-family: 'Noto Sans', sans-serif;
   font-size: rem(16px);
   color-scheme: light dark;
-  background-color: #87ceeb;
   color: #ffffff;
   width: 100vw;
   height: 100vh;
   padding: 0;
   margin: 0;
+  text-shadow: 3px 3px 3px #222222;
+  background-size: cover;
 }
 
 main {
@@ -36,6 +37,7 @@ label {
   position: absolute;
   top: 50%;
   left: 45%;
+  transform: translate(-50%, -50%);
 }
 
 input {
@@ -51,6 +53,7 @@ button {
   position: absolute;
   top: 45%;
   left: 44%;
+  transform: translate(-50%, -50%);
 }
 
 .placeHolderIcon {
@@ -61,22 +64,13 @@ button {
 }
 
 @media (max-width: $breakpoint-tablet) {
-  .app {
-
-  }
-  body {
-    display: block;
-    color: green;
-    font-size: large;
-    text-align: center;
-    align-items: center;
-  }
 
   label {
     display: flex;
     position: absolute;
     top: 50%;
     left: 20%;
+    transform: translate(0, -50%);
   }
   .placeHolderIcon {
     right: 0;
@@ -89,10 +83,9 @@ button {
     position: absolute;
     top: 45%;
     left: 15%;
+    transform: translate(0, -50%);
   }
   
-}
-
   footer {
     background: #222222;
     font-size: small;
@@ -102,4 +95,5 @@ button {
     text-align: center;
     align-items: center;
     position: absolute
+}
 }
