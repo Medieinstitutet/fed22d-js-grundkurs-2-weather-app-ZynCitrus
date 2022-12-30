@@ -1,5 +1,4 @@
 import './style/style.scss';
-let checkTime = new Date().getHours();
 let checkMonth = new Date().getMonth();
 const submitCity = document.querySelector('#submitCity');
 submitCity.addEventListener('click', getTextFromInput);
@@ -74,7 +73,7 @@ function handleData(data){
   const getIconForSky = data.weather[0].icon;
   const iconForSky = `https://openweathermap.org/img/wn/${getIconForSky}@2x.png`
   document.getElementById('iconForSky').src=iconForSky;
-  document.getElementById("placeHolderTemp").innerHTML = "Idag är det " + tempuratureDecimal + " grader och det känns som " + feelsLike + " i " + city + " grader.";
+  document.getElementById("placeHolderTemp").innerHTML = "Idag är det " + tempuratureDecimal + " grader och det känns som " + feelsLike + " grader i " + city;
   // localStorage.setItem('input', getCity);
 };
 
