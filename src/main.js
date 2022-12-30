@@ -47,7 +47,7 @@ async function getTempuratureArray(inputCity){
   
 function handleLocation(){
   const successCallback = (position) => {
-    let locationLink = `http://api.openweathermap.org/geo/1.0/reverse?lat=${position.coords.latitude}&lon=${position.coords.longitude}&limit=0&appid=75303f12006046a5556974d2d62ef0d1&units=metric`
+    let locationLink = `https://api.openweathermap.org/geo/1.0/reverse?lat=${position.coords.latitude}&lon=${position.coords.longitude}&limit=0&appid=75303f12006046a5556974d2d62ef0d1&units=metric`
   return fetch(locationLink)
     .then((data) => data.json())
     .then((json) => {
