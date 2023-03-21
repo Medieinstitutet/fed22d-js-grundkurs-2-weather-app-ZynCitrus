@@ -2,8 +2,11 @@
 
 ## Teknikstack
 
+##
 - VanillaJS
+##
 - HTML
+##
 - CSS
 
 ##
