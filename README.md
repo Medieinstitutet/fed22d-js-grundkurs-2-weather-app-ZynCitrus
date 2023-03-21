@@ -1,7 +1,6 @@
 ## En cool väderapp.
 
-##
--Teknikstack
+## Teknikstack
 
 VanillaJS
 HTML
